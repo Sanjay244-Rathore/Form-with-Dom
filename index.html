@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form-with-Dom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+
+    #main-part {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sec-1 {
+        padding: 0% 20px;
+        width: 25%;
+        border: 2px solid brown;
+    }
+
+    #soccer-ball {
+        border: 2px solid red;
+        background-color: rgb(0, 164, 145);
+    }
+
+    #icon-facebook {
+        border: 1px solid rgb(0, 0, 181);
+        background-color: rgb(0, 0, 181);
+        padding: 5px;
+        border-radius: 100px;
+    }
+    #signup-btn{
+        width: 100%;
+        border: 2px solid green ;
+    }
+    .p{
+        /* border: 1px solid navy; */
+        padding: 15px 5px 0px 5px;
+    }
+    input{
+        margin-top: -10px;
+        width: 100%;
+    }
+    #icon-twitter {
+        border: 1px solid rgb(65, 189, 238);
+        background-color: rgb(65, 189, 238);
+        padding: 5px;
+        border-radius: 100px;
+
+    }
+
+    #sec-2 {
+        width: 25%;
+        border: 1px solid rgb(0, 0, 181);
+    }
+    #signup-sec{
+        border: 1px solid red;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container-fluid" id="main">
+        <h3>Sign Up #03</h3>
+        <div id="main-part">
+            <div id="sec-1">
+                <h2>Hello!</h2>
+                <span>Please signup to continue</span><br />
+                <p class="p">Full Name</p>
+                <input type="text" placeholder="name"><br />
+                <p class="p">Email Address</p>
+                <input type="text" placeholder="email address"><br />
+                <p class="p">password</p>
+                <input type="text" placeholder="password"><br />
+                <p class="p">Confirm password</p>
+                <input type="text" placeholder="password"><br />
+                <div id="signup-sec">
+                    <button id="signup-btn">Sign Up</button><br />
+                    <span>or</span><br />
+                    <span>Signup with</span><br />
+                    <div id="image-sec">
+                        <img src="./images/facebook.png" alt="" id="icon-facebook">
+                        <img src="./images/twitter.png" alt="" id="icon-twitter">
+                    </div>
+                    <span>I'm already a member! <a href="">Sign in</a> </span>
+                </div>
+            </div>
+            <div id="sec-2">
+                <img src="./images/soccer-ball (1).png" alt="" id="soccer-ball">
+                <h1>Soccer Ball</h1>
+                <p>Already have an account?</p>
+                <button id="sign-in">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
